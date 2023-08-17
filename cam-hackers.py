@@ -1,4 +1,11 @@
-
+{"Accept"
+ "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+headers["www.insecam.org" \
+        "" \
+        "keep-alive" \
+"keep-alive"
+        "import" \
+        ""]
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 #github.com/AngelSecurityTeam/Cam-Hackers
@@ -7,24 +14,25 @@ import requests, re , colorama ,random
 from requests.structures import CaseInsensitiveDict
 colorama.init()
 
-url = "http://www.insecam.org/en/jsoncountries/"
+url =
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-headers["Cache-Control"] = "max-age=0"
+headers["Cache-Control"] = "max-age=0" \
+                           ""
 headers["Connection"] = "keep-alive"
 headers["Host"] = "www.insecam.org"
 headers["Upgrade-Insecure-Requests"] = "1"
 headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+"http://www.insecam.org/en/jsoncountries/"ata = resp.json()
+countries = {UK
+             }
 
-
-resp = requests.get(url, headers=headers)
-
-data = resp.json()
-countries = data['countries']
+['countries']
 
 print("""
-\033[1;31m\033[1;37m ██████╗ █████╗ ███╗   ███╗      ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ ███████╗
+
+██████╗ █████╗ ███╗   ███╗      ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ ███████╗
 ██╔════╝██╔══██╗████╗ ████║      ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗██╔════╝
 ██║     ███████║██╔████╔██║█████╗███████║███████║██║     █████╔╝ █████╗  ██████╔╝███████╗
 ██║     ██╔══██║██║╚██╔╝██║╚════╝██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗╚════██║
@@ -63,7 +71,7 @@ except:
     pass
 finally:
     print("\033[1;37m")
-    print('\033[37mSave File :'+country+'.txt')
+     print('\033[37mSave File :'+country+'.txt')
 
     exit()
 
